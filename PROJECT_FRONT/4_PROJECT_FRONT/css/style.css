@@ -1,0 +1,128 @@
+:root{
+    /* ### Primary */
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+    
+    /* ## Gradients */
+    
+    --Light-slate-blue : hsl(252, 100%, 67%);
+    --Light-royal-blue : hsl(241, 81%, 54%);
+    
+    --Violet-blue : hsla(256, 72%, 46%, 1);
+    --Persian-blue : hsla(241, 72%, 46%, 0);
+    
+    
+    
+    /* ### Neutral */
+    
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    --Mobile: 375px;
+    --Desktop: 1440px;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hanken Grotesk, sans-serif' ;
+}
+
+p{
+    Font-size: 18px;
+}
+
+main{
+    border: 3px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e1e1;
+}
+
+.container{
+    display: flex;
+    max-width: var(--Desktop);
+    background-color: var(--White);
+    border-radius: 15px;
+}
+
+
+.caixa-esquerda{
+background: linear-gradient(to bottom, var(--Light-slate-blue),var(--Light-royal-blue));
+color: var(--Light-lavender);
+border-radius: 14px;
+padding: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 2rem;
+}
+.caixa-esquerda h3{
+color: #fff ;
+}
+.caixa-esquerda div + p{
+color: var(--White);
+}
+
+.caixa-direita{
+background-color: #fff;
+border-radius: 14px;
+}
+
+
+
+
+
+/* 
+.container{
+background-color: hsla(256, 72%, 46%, 1);
+display: flex;
+flex-direction: column;
+height: 12rem;
+}
+
+.porcentagem{
+    background-color: hsl(0, 0%, 100%);
+}
+
+header{
+   color: hsl(224, 30%, 27%) ; 
+   font-size: 18px;
+}
+
+p{
+    font-size: 2rem;
+    color: white;
+
+}
+
+span{
+    font-size: 18px;
+    color:hsl(224, 30%, 27%);
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    color: aquamarine;
+}
+
+.btn{
+border-radius: 1rem;
+}
+
+h2{
+    color: white;
+} */
